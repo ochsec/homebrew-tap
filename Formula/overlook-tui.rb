@@ -26,11 +26,11 @@ class OverlookTui < Formula
     end
   end
 
-  def install
-    bin.install "overlook-tui"
-  end
+   def install
+     bin.install "overlook-tui" => "overlook"
+   end
 
-  test do
-    system "#{bin}/overlook-tui", "--version"
-  end
+   test do
+     system "#{bin}/overlook", "--version"
+   end
 end
